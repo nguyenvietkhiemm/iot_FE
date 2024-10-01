@@ -54,7 +54,7 @@ const Dashboard = ({ dataSensors, dataDevices, sendControlData }) => {
       }));
     }
   }, [dataDevices["3"]]);
-
+  console.log(dataDevices);
   // Hàm xử lý bật tắt switch và gửi control data cho mỗi phần tử
   const handleChange = (id) => (event) => {
     const checked = event.target.checked;
@@ -64,8 +64,6 @@ const Dashboard = ({ dataSensors, dataDevices, sendControlData }) => {
     }));
     sendControlData({ [id]: checked ? 1 : 0 });
   };
-
-  console.log(dataDevices);
 
   const GreenSwitch = styled(Switch)(({ theme }) => ({
     '& .MuiSwitch-switchBase.Mui-checked': {
