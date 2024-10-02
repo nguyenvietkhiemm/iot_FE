@@ -26,7 +26,7 @@ const ProfilePage = () => {
           style={{ width: '150px', height: '150px', borderRadius: '50%' }}
         />
         <Typography variant="h3" gutterBottom>
-          Nguyen Viet Khiem
+          Nguyễn Việt Khiêm
         </Typography>
         <Typography variant="subtitle1" color="textSecondary">
           Mã sinh viên: B21DCCN458
@@ -43,7 +43,7 @@ const ProfilePage = () => {
         <Typography variant="h5" gutterBottom>
           Báo cáo PDF
         </Typography>
-        <Link href="/path-to-your-report.pdf" target="_blank" rel="noopener" underline="hover">
+        <Link href="https://drive.google.com/file/d/15j-ROpHBCqBk7-EV28UvYfoENkB64r2C/view?usp=sharing" target="_blank" rel="noopener" underline="hover" color="textSecondary">
           Tải báo cáo
         </Link>
       </Box>
@@ -52,7 +52,7 @@ const ProfilePage = () => {
         <Typography variant="h5" gutterBottom>
           Link Git
         </Typography>
-        <Link href="https://github.com/nguyenvietkhiemm" target="_blank" rel="noopener" underline="hover">
+        <Link href="https://github.com/nguyenvietkhiemm/iot" target="_blank" rel="noopener" underline="hover" color="textSecondary">
           GitHub Repository
         </Link>
       </Box>
@@ -60,7 +60,7 @@ const ProfilePage = () => {
         <Typography variant="h5" gutterBottom>
           API Docs
         </Typography>
-        <Link href="https://your-api-docs-url" target="_blank" rel="noopener" underline="hover">
+        <Link href="https://documenter.getpostman.com/view/34072501/2sAXxJib3a" target="_blank" rel="noopener" underline="hover" color="textSecondary">
           Xem tài liệu API
         </Link>
       </Box>

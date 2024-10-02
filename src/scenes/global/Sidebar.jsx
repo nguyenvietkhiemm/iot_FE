@@ -165,6 +165,14 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             
+            <Item
+              title="Login"
+              to="/login"
+              icon={<CalendarTodayOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
           </Box>
         </Menu>
       </ProSidebar>

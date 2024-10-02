@@ -24,7 +24,7 @@ const Team = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/data/data_sensors`, {
+        const response = await axios.get(`/api/data/data_sensors`, {
           params: { page: page + 1, pageSize } // Cộng 1 vì API thường bắt đầu từ 1
         });
         setData(response.data.items); // Giả sử dữ liệu trả về là { items: [...], total: ... }
