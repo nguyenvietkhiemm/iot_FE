@@ -37,7 +37,7 @@ const useSocket = () => {
 
   const fetchDataSensors = async () => {
     try {
-      const response = await axios.get(`/realtime/api/data/data_sensors`);
+      const response = await axios.get(`http://localhost:3000/realtime/api/data/data_sensors`);
 
       const now = new Date();  // Get current time
       const formattedTime = moment(now).format("HH:mm:ss");
@@ -80,7 +80,7 @@ const useSocket = () => {
 
   const fetchDataDevices = async () => {
     try {
-      const response = await axios.get(`/realtime/api/data/data_devices`);
+      const response = await axios.get(`http://localhost:3000/realtime/api/data/data_devices`);
       setDataDevices(response.data); // Cập nhật state với dữ liệu nhận được
     } catch (error) {
       console.error("Error fetching data devices:", error);
@@ -95,7 +95,7 @@ const useSocket = () => {
 
   const sendControlData = async (controlData) => {
     try {
-      const response = await axios.post(`/realtime/api/control/device`, {...controlData, token});
+      const response = await axios.post(`http://localhost:3000/realtime/api/control/device`, {...controlData, token});
       setDataDevices(response.data);
       console.log(response);
     } 
